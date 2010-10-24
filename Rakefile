@@ -1,3 +1,6 @@
+require 'rake'
+require 'rspec/core/rake_task'
+
 begin
   require 'tasks/standalone_migrations'
   MigratorTasks.new do |t|
@@ -11,4 +14,9 @@ begin
   end
 rescue LoadError => e
   puts "gem install standalone_migrations to get db:migrate:* tasks! (Error: #{e})"
+end
+
+desc "Run all specs in the spec directory"
+RSpec::Core::RakeTask.new('spec') do |t|
+  t.rspec_opts = %w[--color]
 end
