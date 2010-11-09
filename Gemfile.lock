@@ -13,7 +13,6 @@ GEM
     activesupport (3.0.1)
     arel (1.0.1)
       activesupport (~> 3.0.0)
-    bit-struct (0.13.6)
     builder (2.1.2)
     diff-lcs (1.1.2)
     i18n (0.4.1)
@@ -40,7 +39,6 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  bit-struct
   rspec
   standalone_migrations
   win32console

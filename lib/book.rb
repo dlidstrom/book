@@ -1,5 +1,3 @@
-require 'bit-struct'
-
 class Book
   
   def initialize(file)
