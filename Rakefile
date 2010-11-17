@@ -1,6 +1,8 @@
 require 'rake'
 require 'rspec/core/rake_task'
 
+task :default => [:spec]
+
 begin
   require 'tasks/standalone_migrations'
   MigratorTasks.new do |t|
